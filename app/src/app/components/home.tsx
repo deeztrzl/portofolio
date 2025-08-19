@@ -18,7 +18,7 @@ const Home = () => {
           className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-slate-200"
           style={{ fontFamily: 'var(--font-zilla-slab)' }}
         >
-          Hi, I'm Zaidan Ahmad
+          Hi, I&apos;m Zaidan Ahmad
         </h2>
         <TypeAnimation
           sequence={[
