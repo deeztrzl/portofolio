@@ -10,7 +10,7 @@ import SectionWrapper from './section-wrapper';
 const projects = [
   {
     title: "JAGOTK.AI",
-    description: "An RAG chatbot with multi-functionalities for identity verification and answering frequently asked questions.",
+    description: "An RAG chatbot with multi-functionalities for identity verification and answering frequently asked questions. Actively and currently used by BPJS Ketenagakerjaan.",
     images: ["/images/jagotk1.jpg"],
     tags: ["Python", "LangChain", "Transformers", "FastAPI", "Uvicorn", "Docker"],
     liveUrl: null,

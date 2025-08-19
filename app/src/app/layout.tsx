@@ -24,6 +24,15 @@ const zillaSlab = Zilla_Slab({
 export const metadata: Metadata = {
   title: "Zaidan Ahmad's Portfolio",
   description: "A modern portfolio website built with Next.js and Tailwind CSS.",
+  icons: {
+    shortcut: "/favicon/favicon.ico",
+    icon: [
+      { url: "/favicon/favicon-32x32.png", sizes: "32x32" },
+      { url: "/favicon/favicon-16x16.png", sizes: "16x16" },
+    ],
+    apple: "/favicon/apple-touch-icon.png",
+  },
+  manifest: "/favicon/site.webmanifest",
 };
 
 export default function RootLayout({
