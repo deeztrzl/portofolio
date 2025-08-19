@@ -9,20 +9,20 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-slate-800 dark:bg-slate-900 text-white py-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="flex justify-center space-x-6 mb-4">
-          <Link href="#" target="_blank" className="text-gray-400 hover:text-white transition-colors duration-300">
+          <Link href="https://www.linkedin.com/in/zaidanahmad/" target="_blank" className="text-slate-400 hover:text-white transition-colors duration-300">
             <Linkedin size={24} />
           </Link>
-          <Link href="#" target="_blank" className="text-gray-400 hover:text-white transition-colors duration-300">
+          <Link href="https://github.com/FactSwift" target="_blank" className="text-slate-400 hover:text-white transition-colors duration-300">
             <Github size={24} />
           </Link>
-          <Link href="#" target="_blank" className="text-gray-400 hover:text-white transition-colors duration-300">
+          <Link href="https://www.instagram.com/zaidanahm.ai/" target="_blank" className="text-slate-400 hover:text-white transition-colors duration-300">
             <Instagram size={24} />
           </Link>
         </div>
-        <p className="text-gray-400">&copy; {new Date().getFullYear()} John Doe. All Rights Reserved.</p>
+        <p className="text-slate-400">&copy; {new Date().getFullYear()} Zaidan Ahmad. All Rights Reserved.</p>
       </div>
     </footer>
   );
@@ -30,7 +30,7 @@ const Footer = () => {
 
 export default function Page() {
   return (
-    <main className="bg-white">
+    <main className="bg-white dark:bg-slate-900">
       <Header />
       <Home />
       <About />
