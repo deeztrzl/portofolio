@@ -71,7 +71,7 @@ const Experiences = () => {
                   ))}
                 </div>
                 <div className={`relative ${index % 2 === 0 ? 'lg:order-2' : 'lg:order-1'}`}>
-                  <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2 -top-4 items-center justify-center w-10 h-10 bg-blue-600 rounded-full text-white">
+                  <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2 -top-5 items-center justify-center w-10 h-10 bg-blue-600 rounded-full text-white">
                     <Briefcase size={20} />
                   </div>
                   <div className="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md">
