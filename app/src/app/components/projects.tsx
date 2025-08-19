@@ -19,7 +19,7 @@ const projects = [
   {
     title: "Mechiu",
     description: "A Java-based, ocean-themed typing game designed for education and typing practice. This college project for our Object-Oriented Programming course won the 'Best Project' award.",
-    images: ["/images/Mechiu1.jpg", "/images/Mechiu2.jpg", "/images/mechiu3.jpg"],
+    images: ["/images/mechiu1.jpg", "/images/mechiu2.jpg", "/images/mechiu3.jpg"],
     tags: ["Java", "JavaFX"],
     liveUrl: null,
     githubUrl: "https://github.com/FactSwift/MecHiu"
