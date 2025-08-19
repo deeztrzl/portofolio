@@ -99,7 +99,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0], index: n
 
 const Projects = () => {
   return (
-  <SectionWrapper id="projects" className="bg-white dark:bg-slate-900">
+    <SectionWrapper id="projects" className="bg-white dark:bg-slate-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-200 text-center mb-12">
           My Projects

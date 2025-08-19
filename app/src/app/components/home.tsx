@@ -7,7 +7,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
   return (
-  <section id="home" className="h-screen flex items-center justify-center text-center bg-slate-50 dark:bg-slate-900">
+    <section id="home" className="h-screen flex items-center justify-center text-center bg-slate-50 dark:bg-slate-900">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

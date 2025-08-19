@@ -32,12 +32,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-      className={`${poppins.variable} ${inter.variable} ${zillaSlab.variable} font-sans bg-white dark:bg-slate-900`}
-    >
-      <body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${poppins.variable} ${inter.variable} ${zillaSlab.variable} font-sans bg-white dark:bg-slate-900`}>
         <Providers>{children}</Providers>
       </body>
     </html>

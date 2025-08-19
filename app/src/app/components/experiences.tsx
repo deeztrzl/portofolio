@@ -29,7 +29,7 @@ const experiences = [
   },
   {
     position: "Staff of Study and Research Department",
-    company: "HIMATRON UPI",
+    company: "HIMATRONIKA-AI",
     time: "Jan 2024 - Dec 2024",
     description: [
       "Contributed to various innovation projects.",
@@ -41,7 +41,7 @@ const experiences = [
 
 const Experiences = () => {
   return (
-  <SectionWrapper id="experiences" className="bg-slate-50 dark:bg-slate-900">
+    <SectionWrapper id="experiences" className="bg-slate-50 dark:bg-slate-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-200 text-center mb-12">
           Experiences

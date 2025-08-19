@@ -7,7 +7,7 @@ import SectionWrapper from './section-wrapper';
 
 const About = () => {
   return (
-  <SectionWrapper id="about" className="bg-white dark:bg-slate-900">
+    <SectionWrapper id="about" className="bg-white dark:bg-slate-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:flex lg:items-center lg:space-x-12">
           <div className="lg:w-1/2 mb-12 lg:mb-0">

@@ -6,7 +6,7 @@ import SectionWrapper from './section-wrapper';
 
 const Contact = () => {
   return (
-  <SectionWrapper id="contact" className="bg-slate-50 dark:bg-slate-900">
+    <SectionWrapper id="contact" className="bg-slate-50 dark:bg-slate-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl text-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}

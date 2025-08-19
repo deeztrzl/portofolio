@@ -29,7 +29,7 @@ const SectionWrapper: React.FC<SectionWrapperProps> = ({ children, className, id
   return (
     <motion.section
       id={id}
-  className={className}
+      className={`py-24 ${className}`}
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.2 }}
