@@ -4,7 +4,7 @@ import About from './components/about';
 import Experiences from './components/experiences';
 import Projects from './components/projects';
 import Contact from './components/contact';
-import { ThemeDebugger } from './components/theme-debugger';
+import { SimpleThemeTest } from './components/simple-theme-test';
 import { Github, Linkedin, Instagram } from 'lucide-react';
 import Link from 'next/link';
 
@@ -39,7 +39,7 @@ export default function Page() {
       <Projects />
       <Contact />
       <Footer />
-      <ThemeDebugger />
+      <SimpleThemeTest />
     </div>
   );
 }
