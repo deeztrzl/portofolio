@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Debug</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-slate-900 text-black dark:text-white min-h-screen p-8">
+    <h1 class="text-2xl font-bold mb-4">Theme Debug Test</h1>
+    
+    <button 
+        id="themeToggle"
+        class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 mb-4"
+    >
+        Toggle Theme
+    </button>
+    
+    <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded">
+        <p>This div should change background color when theme changes</p>
+        <p>Current theme: <span id="currentTheme">light</span></p>
+    </div>
+
+    <script>
+        const html = document.documentElement;
+        const toggleBtn = document.getElementById('themeToggle');
+        const themeSpan = document.getElementById('currentTheme');
+        
+        let isDark = false;
+        
+        toggleBtn.addEventListener('click', () => {
+            isDark = !isDark;
+            if (isDark) {
+                html.classList.add('dark');
+                themeSpan.textContent = 'dark';
+            } else {
+                html.classList.remove('dark');
+                themeSpan.textContent = 'light';
+            }
+        });
+    </script>
+</body>
+</html>
