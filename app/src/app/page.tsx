@@ -30,7 +30,7 @@ const Footer = () => {
 
 export default function Page() {
   return (
-    <main className="bg-white dark:bg-slate-900">
+    <div className="min-h-screen bg-white dark:bg-slate-900 transition-colors duration-300">
       <Header />
       <Home />
       <About />
@@ -38,6 +38,6 @@ export default function Page() {
       <Projects />
       <Contact />
       <Footer />
-    </main>
+    </div>
   );
 }

@@ -42,7 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.variable} ${inter.variable} ${zillaSlab.variable} font-sans bg-white dark:bg-slate-900`}>
+      <body className={`${poppins.variable} ${inter.variable} ${zillaSlab.variable} font-sans`}>
         <Providers>{children}</Providers>
       </body>
     </html>
