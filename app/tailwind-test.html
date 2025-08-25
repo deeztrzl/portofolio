@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Dark Mode Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+</head>
+<body class="p-8 bg-white dark:bg-slate-900 text-black dark:text-white min-h-screen transition-colors">
+    <h1 class="text-3xl font-bold mb-4">Tailwind Dark Mode Test</h1>
+    
+    <div id="status" class="mb-4 p-4 bg-blue-100 dark:bg-blue-900 rounded">
+        <p>Current mode: <span id="mode">light</span></p>
+        <p>HTML classes: <span id="classes"></span></p>
+    </div>
+    
+    <button 
+        onclick="toggleTheme()"
+        class="mb-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded transition-colors"
+    >
+        Toggle Dark Mode
+    </button>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="p-4 bg-gray-100 dark:bg-gray-800 rounded transition-colors">
+            <h2 class="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Card 1</h2>
+            <p class="text-gray-700 dark:text-gray-300">This should change color when dark mode is toggled.</p>
+        </div>
+        
+        <div class="p-4 bg-slate-100 dark:bg-slate-800 rounded transition-colors">
+            <h2 class="text-xl font-semibold mb-2 text-slate-900 dark:text-slate-100">Card 2</h2>
+            <p class="text-slate-700 dark:text-slate-300">Another test element with different color scheme.</p>
+        </div>
+    </div>
+
+    <script>
+        function updateStatus() {
+            const html = document.documentElement;
+            const isDark = html.classList.contains('dark');
+            document.getElementById('mode').textContent = isDark ? 'dark' : 'light';
+            document.getElementById('classes').textContent = html.className || '(no classes)';
+        }
+        
+        function toggleTheme() {
+            const html = document.documentElement;
+            const isDark = html.classList.contains('dark');
+            
+            if (isDark) {
+                html.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+            
+            updateStatus();
+        }
+        
+        // Initialize
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.documentElement.classList.add('dark');
+        }
+        updateStatus();
+        
+        // Monitor changes
+        setInterval(updateStatus, 1000);
+    </script>
+</body>
+</html>
